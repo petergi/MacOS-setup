@@ -26,6 +26,7 @@ nonAppStoreApps=(
     iterm2 # Alternative terminal
     sketch # UI/UX design tool
     zeplin # UI/UX design viewer
+    avocode # UI/UX design tool
     typora # Markdown single pane editor
     sourcetree # GUI for git and gitflow
     sherlock # App to edit iOS Views on the fly
@@ -154,8 +155,8 @@ echo -e "export CLICOLOR=1\n#light theme\nexport LSCOLORS=ExFxBxDxCxegedabagacad
 #Install Oh-My-Zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-#Fix Catalina bug with "Insecure completion-dependent directories detected"
-compaudit | xargs chmod g-w,o-w
+#Fix Catalina bug with "Insecure completion-dependent directories detected". Uncomment only when needed
+#compaudit | xargs chmod g-w,o-w
 
 # Install terminal colors for zsh (light theme)
 # Use this generator to translate BSD colors and Linux colors: https://geoff.greer.fm/lscolors/
